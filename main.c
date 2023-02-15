@@ -63,18 +63,32 @@ int main() {
     printf("Le caractère %c à pour équivalent en ACSII %d \n",cara,cara);
 
     //EX5
-    int x;
-    x= - 3 + 4 * 5 - 6;
-    printf ("%d\n",x);
-    x = 3 + 4 % 5 - 6;
-    printf ("%d\n",x);
-    x=- 3 + 4 % -6 / 5;
-    printf ("%d\n",x);
-    x=(7 + 6 ) % 5 / 2;
-    printf ("%d\n",x);
+    int xx;
+    xx= - 3 + 4 * 5 - 6;
+    printf ("%d\n",xx);
+    xx = 3 + 4 % 5 - 6;
+    printf ("%d\n",xx);
+    xx=- 3 + 4 % -6 / 5;
+    printf ("%d\n",xx);
+    xx=(7 + 6 ) % 5 / 2;
+    printf ("%d\n",xx);
     // 11 1 -3 1
 
     //EX6
+    int x = 2, y, z ;
+    PRINTX;
+    x *= 3 + 2 ;
+    PRINTX;
+    x *= y = z = 4 ;
+    PRINTX;
+    x=y==z;
+    PRINTX;
+    x == (y = z) ;
+    PRINTX;
+    //2 10 40 1 1
+
+    //EX7
+
     return 0;
 }
 
