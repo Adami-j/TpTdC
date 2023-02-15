@@ -13,6 +13,7 @@
 // ================================================================================================================
 //
 #include <stdio.h>
+#include <limits.h>
 int main() {
 
     //exo1
@@ -32,9 +33,19 @@ int main() {
     printf("Taille de bool : %zu octets\n", sizeof(_Bool));
     printf("Taille de void : %zu octets\n", sizeof(void));
     printf("Taille de pointeur : %zu octets\n", sizeof(void*));
+
+    //version avec bits
+    printf("Taille de char : %zu bits\n", CHAR_BIT * sizeof(char));
+    printf("Taille de short : %zu bits\n", CHAR_BIT * sizeof(short));
+    printf("Taille de int : %zu bits\n", CHAR_BIT * sizeof(int));
+    printf("Taille de long : %zu bits\n", CHAR_BIT * sizeof(long));
+    printf("Taille de long long : %zu bits\n", CHAR_BIT * sizeof(long long));
+    printf("Taille de float : %zu bits\n", CHAR_BIT * sizeof(float));
+    printf("Taille de double : %zu bits\n", CHAR_BIT * sizeof(double));
+    printf("Taille de long double : %zu bits\n", CHAR_BIT * sizeof(long double));
+    printf("Taille de bool : %zu bits\n", CHAR_BIT * sizeof(_Bool));
+    printf("Taille de pointeur : %zu bits\n", CHAR_BIT * sizeof(void*));
     //EX3
-
-
 
     return 0;
 }
