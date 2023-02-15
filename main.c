@@ -16,6 +16,9 @@
 #include <limits.h>
 #define PRINT(int) printf("%d\n", int)
 #define PRINTX printf("%d\n",x)
+
+void fonctEx8();
+
 int main() {
 
     //exo1
@@ -103,7 +106,27 @@ int main() {
     PRINT(o);
     o = t / ++ t;
     PRINT(o);
+
+    //EX8
+    fonctEx8();
     return 0;
+}
+
+void fonctEx8() {
+    printf("EX8");
+    int x, y, z;
+    x = 03 ; y =02 ; z =01 ;
+    PRINT( x | y & z);
+    PRINT( x | y & ~z);
+    PRINT( x ^ y & ~z);
+    PRINT( x & y && z);
+    x=1 ; y= -1;
+    PRINT( !x | x);
+    PRINT( ~x | x);
+    PRINT( x ^ x);
+    x <<= 3 ; PRINT(x);
+    y <<=3 ; PRINT(y);
+    y >>= 3 ; PRINT(y);
 }
 
 
