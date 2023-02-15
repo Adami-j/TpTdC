@@ -14,6 +14,7 @@
 //
 #include <stdio.h>
 #include <limits.h>
+#define PRINT(int) printf("%d\n", int)
 #define PRINTX printf("%d\n",x)
 int main() {
 
@@ -88,8 +89,22 @@ int main() {
     //2 10 40 1 1
 
     //EX7
-
+    printf("Coucou");
+    int t, i, o;
+    t = 2 ; i = 1; o = 0;
+    t = t && i || o;
+    PRINT(t);
+    PRINT(t || ! i && o);
+    t = i = 1;
+    o = t ++ - 1; PRINT(t) ;
+    PRINT(o);
+    o += - t ++ + ++ i;
+    PRINT(t) ;
+    PRINT(o);
+    o = t / ++ t;
+    PRINT(o);
     return 0;
 }
+
 
 
