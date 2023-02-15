@@ -45,7 +45,19 @@ int main() {
     printf("Taille de long double : %zu bits\n", CHAR_BIT * sizeof(long double));
     printf("Taille de bool : %zu bits\n", CHAR_BIT * sizeof(_Bool));
     printf("Taille de pointeur : %zu bits\n", CHAR_BIT * sizeof(void*));
+
     //EX3
+    int annee;
+    scanf("%d",&annee);
+
+    if((annee%4==0 && annee%100!=0) || (annee%400==0)){
+        printf("L'année %d est une année bisextile",annee);
+    }else{
+        printf("L'année %d n'est pas une année bisextile",annee);
+    }
+
+
+
 
     return 0;
 }
