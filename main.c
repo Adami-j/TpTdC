@@ -47,18 +47,21 @@ int main() {
     printf("Taille de pointeur : %zu bits\n", CHAR_BIT * sizeof(void*));
 
     //EX3
-    int annee;
-    scanf("%d",&annee);
+    int annee=2000;
+    //scanf("%d",&annee);
 
     if((annee%4==0 && annee%100!=0) || (annee%400==0)){
         printf("L'année %d est une année bisextile",annee);
     }else{
-        printf("L'année %d n'est pas une année bisextile",annee);
+        printf("L'année %d n'est pas une année bisextile \n\n\n",annee);
     }
 
+    //EX4
+    char cara;
+    scanf("%c",&cara);
+    printf("Le caractère %c à pour équivalent en ACSII %d \n",cara,cara);
 
-
-
+    //EX5
     return 0;
 }
 
